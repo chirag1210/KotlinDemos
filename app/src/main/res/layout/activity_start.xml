@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btnRecycleView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/recycle_view"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@+id/btnSerializable"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnSerializable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/serializable_example"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@+id/btnParcelable"
+        app:layout_constraintEnd_toEndOf="@+id/btnParcelable"
+        app:layout_constraintTop_toBottomOf="@+id/btnRecycleView" />
+
+    <Button
+        android:id="@+id/btnParcelable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="2dp"
+        android:text="@string/parcelable"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@+id/btnSharedPref"
+        app:layout_constraintEnd_toEndOf="@+id/btnSharedPref"
+        app:layout_constraintTop_toBottomOf="@+id/btnSerializable" />
+
+    <Button
+        android:id="@+id/btnSharedPref"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/shared_pref"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@+id/btnRetrofit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnParcelable" />
+
+    <Button
+        android:id="@+id/btnRetrofit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="2dp"
+        android:text="@string/retrofit"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@+id/btnGlide"
+        app:layout_constraintEnd_toEndOf="@+id/btnGlide"
+        app:layout_constraintTop_toBottomOf="@+id/btnSharedPref" />
+
+    <Button
+        android:id="@+id/btnGlide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="3dp"
+        android:text="@string/glide_text"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@+id/btnPermission"
+        app:layout_constraintEnd_toEndOf="@+id/btnPermission"
+        app:layout_constraintTop_toBottomOf="@+id/btnRetrofit" />
+
+    <Button
+        android:id="@+id/btnPermission"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/permission"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintStart_toStartOf="@+id/button3"
+        app:layout_constraintTop_toBottomOf="@+id/btnGlide" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPermission" />
+</androidx.constraintlayout.widget.ConstraintLayout>

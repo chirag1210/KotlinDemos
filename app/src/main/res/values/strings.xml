@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">MyKotlinDemo</string>
+    <string name="recycle_view">RecycleView</string>
+    <string name="serializable_example">Serializable</string>
+    <string name="send_data">Send Data</string>
+    <string name="parcelable">Parcelable</string>
+    <string name="email_id">chirag.chaudhari7@gmail.com</string>
+    <string name="shared_pref">Shared Pref</string>
+    <string name="enter_text">Enter Text</string>
+    <string name="retrofit">Retrofit</string>
+    <string name="glide_text">Glide</string>
+    <string name="permission">Permission</string>
+
+    <string name="storage_access_required">Storage access is required to download a file.</string>
+    <string name="ok">OK</string>
+    <string name="downloading">Downloading...</string>
+    <string name="storage_permission_denied">Storage permission denied</string>
+</resources>
